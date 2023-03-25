@@ -13,7 +13,8 @@
     "outDir": "dist",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "types": ["jest"]
   },
   "exclude": [
     "node_modules",
