@@ -8,11 +8,15 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "author": "Peyton Cleveland",
+  "author": "Peyton Cleveland <peyton.cleveland.1@gmail.com>",
+  "contributors": [
+    "Peyton Cleveland",
+    "Leighton Tidwell"
+  ],
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
-    "build:clear": "rm -rf dist",
+    "build": "npm run clean && rollup -c",
+    "clean": "rm -rf dist",
     "test": "jest"
   },
   "keywords": [
