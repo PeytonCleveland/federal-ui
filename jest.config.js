@@ -1,8 +1,8 @@
 module.exports = {
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
   verbose: false,
   testTimeout: 10000,
-  testMatch: ["**/src/**/*.test.[jt]s?(x)"],
+  testMatch: ['**/src/**/*.test.[jt]s?(x)'],
   coverageThreshold: {
     global: {
       branches: 0,
@@ -11,5 +11,8 @@ module.exports = {
       statements: 0,
     },
   },
-  setupFilesAfterEnv: ["<rootDir>/jest-setup.js"],
+  setupFilesAfterEnv: [
+    '<rootDir>/jest-setup.js',
+    '@testing-library/jest-dom/extend-expect',
+  ],
 };

@@ -14,7 +14,7 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
-    "types": ["jest"]
+    "types": ["jest", "@testing-library/jest-dom"]
   },
   "exclude": [
     "node_modules",
