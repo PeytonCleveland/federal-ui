@@ -29,13 +29,49 @@ Text.args = {
 };
 
 export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
-  children: 'Disabled Button',
-};
+
+Disabled.decorators = [
+  () => (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <Button disabled>Disabled Button</Button>
+      <Button kind="outlined" disabled>
+        Disabled Button
+      </Button>
+      <Button kind="text" disabled>
+        Disabled Button
+      </Button>
+    </div>
+  ),
+];
 
 export const Loading = Template.bind({});
-Loading.args = {
-  loading: true,
-  children: 'Loading Button',
-};
+
+Loading.decorators = [
+  () => (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <Button loading>Loading Button</Button>
+      <Button kind="outlined" loading>
+        Loading Button
+      </Button>
+      <Button kind="text" loading>
+        Loading Button
+      </Button>
+    </div>
+  ),
+];
+
+export const fullWidth = Template.bind({});
+
+fullWidth.decorators = [
+  () => (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <Button fullWidth>Filled Button</Button>
+      <Button kind="outlined" fullWidth>
+        Outlined Button
+      </Button>
+      <Button kind="text" fullWidth>
+        Text Button
+      </Button>
+    </div>
+  ),
+];

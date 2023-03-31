@@ -1,6 +1,6 @@
 {
   "name": "@omni-federal/federal-ui",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Open Source React Component Library",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -69,5 +69,8 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
   }
 }
