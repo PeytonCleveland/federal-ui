@@ -1,7 +1,7 @@
 {
   "name": "@omni-federal/federal-ui",
-  "version": "0.0.4",
-  "description": "Open Source React Component Library",
+  "version": "0.0.6",
+  "description": "Open Source React Component Library implementing the Federal Design System",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
