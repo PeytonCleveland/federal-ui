@@ -107,23 +107,40 @@ const StyledButton = styled('button', {
       },
       text: {
         padding: '0',
+        borderRadius: '0',
         backgroundColor: 'transparent',
         color: '#0A121E',
+        overflow: 'hidden',
         '&:hover': {
           color: '#535961',
-          textDecoration: 'underline',
-          textUnderlineOffset: '4px',
-          textDecorationColor: '#535961',
-          textDecorationThickness: '2px',
         },
         '&:disabled': {
           color: '#646C78',
           cursor: 'not-allowed',
-          textDecoration: 'none',
         },
         '&:focus': {
           color: '#1673FF',
-          textDecorationColor: '#1673FF',
+        },
+        '&:focus::after': {
+          backgroundColor: '#1673FF',
+        },
+        '&::after': {
+          content: '""',
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          width: '100%',
+          height: '2px',
+          backgroundColor: '#535961',
+          transition: 'opacity 300ms, transform 300ms',
+          opacity: 1,
+          transform: 'translate3d(-101%, 0, 0)',
+        },
+        '&:hover::after': {
+          transform: 'translate3d(0, 0, 0)',
+        },
+        '&:disabled::after': {
+          opacity: 0,
         },
       },
     },
