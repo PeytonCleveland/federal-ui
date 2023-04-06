@@ -86,6 +86,7 @@ const StyledButton = styled('button', {
         },
         '&:focus': {
           outline: '2px solid #1673FF',
+          outlineOffset: '2px',
         },
       },
       outlined: {
@@ -103,6 +104,7 @@ const StyledButton = styled('button', {
         '&:focus': {
           border: '2px solid rgba(10,18,30,0.2)',
           outline: '2px solid #1673FF',
+          outlineOffset: '2px',
         },
       },
       text: {
